@@ -1,0 +1,6 @@
+META-INF\MANIFEST.MF
+com\annika\myClassifier\Classifier.class
+com\annika\myClassifier\App.class
+META-INF\maven\com.annika\myClassifier\pom.xml
+com\annika\myClassifier\ReplaceUsername.class
+META-INF\maven\com.annika\myClassifier\pom.properties
