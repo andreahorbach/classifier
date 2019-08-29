@@ -86,5 +86,12 @@
   		</artifactId>
 			<version>1.9.3</version>
 		</dependency>
+		<dependency>
+			<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+			<artifactId>
+				de.tudarmstadt.ukp.dkpro.core.opennlp-asl
+			</artifactId>
+			<version>1.9.3</version>
+		</dependency>
 	</dependencies>
 </project>

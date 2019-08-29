@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.annika.myClassifier.AppTest" time="0.004" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.annika.myClassifier.AppTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.1+13-LTS"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\annik\classifierProject\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3225768868052011517.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\annik\classifierProject\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8880629329228057592.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Windows\system64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\annik\Documents\0uni\6. Semester\bachelorarbeit\apache-maven-3.6.1\bin;C:\Program Files\MATLAB\R2019a\bin;C:\cygwin64\bin;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\Git\cmd;C:\Users\annik\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\annik\AppData\Local\Programs\Python\Python36\;C:\Users\annik\Anaconda3;C:\Users\annik\Anaconda3\Library\mingw-w64\bin;C:\Users\annik\Anaconda3\Library\usr\bin;C:\Users\annik\Anaconda3\Library\bin;C:\Users\annik\Anaconda3\Scripts;C:\Users\annik\AppData\Local\Microsoft\WindowsApps;C:\Users\annik\Anaconda3\Lib\site-packages;C:\Users\annik\AppData\Local\GitHubDesktop\bin;C:\Users\annik\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\annik\Downloads\eclipse-jee-2018-09-win32-x86_64\eclipse;;."/>
     <property name="jdk.debug" value="release"/>
@@ -61,5 +61,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.annika.myClassifier.AppTest" name="testApp" time="0.004"/>
+  <testcase classname="com.annika.myClassifier.AppTest" name="testApp" time="0"/>
 </testsuite>
