@@ -59,12 +59,16 @@ public class EmotionLexiconFeatureExtractor extends FeatureExtractorResource_Imp
 		// hier lexicon einlesen und eine liste für jede emotion machen
 		BufferedReader br = null;
 		try {
+			//emotion lexicon
 			br = new BufferedReader(new FileReader("src/main/resources/NRC-Emotion-Lexicon-Wordlevel-v0.92.txt"));
 			String nextLine = null;
+			//every line of emotion lexicon
 			while ((nextLine = br.readLine()) != null) {
-				// wort emotion 0 oder 1
+				// wort		emotion		0 oder 1
 				String[] wordsInLine = nextLine.split("\t");
+				//if a word implies an emotion it has got a 1
 				if (wordsInLine[2].equals("1")) {
+					//check which emoiton is implied -> add word to fitting emotion list
 					if (wordsInLine[1].equals("anger")) {
 						String word = wordsInLine[0];
 						angerWords.add(wordsInLine[0]);
@@ -128,30 +132,39 @@ public class EmotionLexiconFeatureExtractor extends FeatureExtractorResource_Imp
 		int trustCount = 0;
 
 		int n = 0;
-		// durchläuft alle tweets
+		// runs over all tweets
 		for (POS pos : JCasUtil.selectCovered(jcas, POS.class, aTarget)) {
-			// wörter zählen
+			// counts words
 			n++;
 			String text = pos.getCoveredText().toLowerCase();
-			// arraylist aus wörtern im tweet
+			// list with all words of all tweets
 			tweet.add(text);
 		}
+		//run over all words of all tweets
 		for (int i = 0; i < tweet.size(); i++) {
+			//count if tweet word is in list of words, which implies emotions
 			if (angerWords.contains(tweet.get(i))) {
 				angerCount++;
-			} else if (anticipationWords.contains(tweet.get(i))) {
+			}
+			if (anticipationWords.contains(tweet.get(i))) {
 				anticipationCount++;
-			} else if (disgustWords.contains(tweet.get(i))) {
+			}
+			if (disgustWords.contains(tweet.get(i))) {
 				disgustCount++;
-			} else if (fearWords.contains(tweet.get(i))) {
+			}
+			if (fearWords.contains(tweet.get(i))) {
 				fearCount++;
-			} else if (joyWords.contains(tweet.get(i))) {
+			}
+			if (joyWords.contains(tweet.get(i))) {
 				joyCount++;
-			} else if (sadnessWords.contains(tweet.get(i))) {
+			}
+			if (sadnessWords.contains(tweet.get(i))) {
 				sadnessCount++;
-			} else if (surpriseWords.contains(tweet.get(i))) {
+			}
+			if (surpriseWords.contains(tweet.get(i))) {
 				surpriseCount++;
-			} else if (trustWords.contains(tweet.get(i))) {
+			}
+			if (trustWords.contains(tweet.get(i))) {
 				trustCount++;
 			}
 		}
